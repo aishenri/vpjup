@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nglview-demo</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "678fd6750e004fe3ac411ddec833f6f1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3095ca7c83f043ff9e5e3c5225ea2e29": {
+      "model_name": "ColormakerRegistryModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.1",
+      "state": {
+        "_dom_classes": [],
+        "_msg_ar": [],
+        "_msg_q": [],
+        "layout": "IPY_MODEL_678fd6750e004fe3ac411ddec833f6f1"
+      }
+    },
+    "9330b5a4d15243c9a231ea350c8db9fe": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "474686e2cf814bcab6a948c95a7bd0cc": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "3.0.1",
+      "state": {
+        "_camera_orientation": [],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_490bfdb9913540fabb70492e707bca4e",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_5cded6611668436bb0da427e2e5f88b6",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {},
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "CRYST1   20.000   20.000   20.000  90.00  90.00  90.00 P 1\nMODEL     1\nATOM      1    C MOL     1      12.210  10.587  12.667  1.00  0.00           C  \nATOM      2    C MOL     1      13.108  10.158  11.630  1.00  0.00           C  \nATOM      3    C MOL     1      11.328   9.684  13.236  1.00  0.00           C  \nATOM      4    C MOL     1      13.091   8.841  11.201  1.00  0.00           C  \nATOM      5    C MOL     1      13.188   8.543   9.800  1.00  0.00           C  \nATOM      6    C MOL     1      13.221  11.223  10.674  1.00  0.00           C  \nATOM      7    C MOL     1      13.316  10.935   9.323  1.00  0.00           C  \nATOM      8    C MOL     1      13.298   9.570   8.879  1.00  0.00           C  \nATOM      9    C MOL     1       9.552  11.359  13.208  1.00  0.00           C  \nATOM     10    C MOL     1      10.467  12.295  12.617  1.00  0.00           C  \nATOM     11    C MOL     1       9.974  10.076  13.509  1.00  0.00           C  \nATOM     12    C MOL     1      11.773  11.918  12.353  1.00  0.00           C  \nATOM     13    C MOL     1      12.395  12.310  11.119  1.00  0.00           C  \nATOM     14    C MOL     1       9.739  13.082  11.662  1.00  0.00           C  \nATOM     15    C MOL     1      10.341  13.459  10.475  1.00  0.00           C  \nATOM     16    C MOL     1      11.695  13.069  10.198  1.00  0.00           C  \nATOM     17    C MOL     1       7.874   9.154  12.670  1.00  0.00           C  \nATOM     18    C MOL     1       7.438  10.485  12.353  1.00  0.00           C  \nATOM     19    C MOL     1       9.122   8.954  13.237  1.00  0.00           C  \nATOM     20    C MOL     1       8.258  11.568  12.620  1.00  0.00           C  \nATOM     21    C MOL     1       8.374  12.636  11.664  1.00  0.00           C  \nATOM     22    C MOL     1       6.701  10.430  11.120  1.00  0.00           C  \nATOM     23    C MOL     1       6.812  11.457  10.200  1.00  0.00           C  \nATOM     24    C MOL     1       7.664  12.581  10.476  1.00  0.00           C  \nATOM     25    C MOL     1       9.499   7.020  11.794  1.00  0.00           C  \nATOM     26    C MOL     1       8.206   7.227  11.205  1.00  0.00           C  \nATOM     27    C MOL     1       9.949   7.867  12.794  1.00  0.00           C  \nATOM     28    C MOL     1       7.411   8.277  11.633  1.00  0.00           C  \nATOM     29    C MOL     1       6.684   9.065  10.676  1.00  0.00           C  \nATOM     30    C MOL     1       8.305   6.931   9.802  1.00  0.00           C  \nATOM     31    C MOL     1       7.604   7.690   8.881  1.00  0.00           C  \nATOM     32    C MOL     1       6.779   8.777   9.326  1.00  0.00           C  \nATOM     33    C MOL     1      12.176   7.905  11.792  1.00  0.00           C  \nATOM     34    C MOL     1      11.712   7.025  10.756  1.00  0.00           C  \nATOM     35    C MOL     1      11.313   8.317  12.794  1.00  0.00           C  \nATOM     36    C MOL     1      10.396   6.595  10.756  1.00  0.00           C  \nATOM     37    C MOL     1       9.659   6.541   9.525  1.00  0.00           C  \nATOM     38    C MOL     1      12.336   7.419   9.524  1.00  0.00           C  \nATOM     39    C MOL     1      11.626   7.364   8.336  1.00  0.00           C  \nATOM     40    C MOL     1      10.261   6.918   8.338  1.00  0.00           C  \nATOM     41    C MOL     1       7.790   9.413   7.333  1.00  0.00           C  \nATOM     42    C MOL     1       8.227   8.082   7.647  1.00  0.00           C  \nATOM     43    C MOL     1       9.533   7.705   7.382  1.00  0.00           C  \nATOM     44    C MOL     1       8.672  10.316   6.764  1.00  0.00           C  \nATOM     45    C MOL     1       7.824  12.095   8.208  1.00  0.00           C  \nATOM     46    C MOL     1       6.909  11.158   8.798  1.00  0.00           C  \nATOM     47    C MOL     1       6.892   9.842   8.370  1.00  0.00           C  \nATOM     48    C MOL     1       8.687  11.683   7.206  1.00  0.00           C  \nATOM     49    C MOL     1      10.500  12.980   8.206  1.00  0.00           C  \nATOM     50    C MOL     1       9.604  13.405   9.244  1.00  0.00           C  \nATOM     51    C MOL     1       8.288  12.975   9.244  1.00  0.00           C  \nATOM     52    C MOL     1      10.051  12.133   7.206  1.00  0.00           C  \nATOM     53    C MOL     1      12.126  10.846   7.330  1.00  0.00           C  \nATOM     54    C MOL     1      12.589  11.723   8.367  1.00  0.00           C  \nATOM     55    C MOL     1      11.794  12.773   8.795  1.00  0.00           C  \nATOM     56    C MOL     1      10.878  11.046   6.763  1.00  0.00           C  \nATOM     57    C MOL     1      10.448   8.641   6.792  1.00  0.00           C  \nATOM     58    C MOL     1      11.742   8.432   7.380  1.00  0.00           C  \nATOM     59    C MOL     1      12.562   9.515   7.647  1.00  0.00           C  \nATOM     60    C MOL     1      10.026   9.924   6.491  1.00  0.00           C  \nENDMDL\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "pdb"
+            }
+          }
+        ],
+        "_ngl_original_stage_parameters": {},
+        "_ngl_repr_dict": {},
+        "_ngl_serialize": true,
+        "_ngl_view_id": [],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_9330b5a4d15243c9a231ea350c8db9fe",
+        "picked": {}
+      }
+    },
+    "197c90e844374c3f8d7be27379143832": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "08fd1d795ba24e08b83125386157e035": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_197c90e844374c3f8d7be27379143832",
+        "width": "900.0"
+      }
+    },
+    "d5b1ca828d524cb28ec969c610086039": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b281c025f1bb4c5bb377d0e9e4ef02d6": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "78bfe10afbbb4747bc828e5dc4c6b3fc": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_d5b1ca828d524cb28ec969c610086039",
+        "max": 0,
+        "style": "IPY_MODEL_b281c025f1bb4c5bb377d0e9e4ef02d6"
+      }
+    },
+    "79285b9892db4e14996eebcd24decdbc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "81feb8d1d170454d85fa606b39df28c7": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "54c68350873448a29b99f7a33404ebf3": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_79285b9892db4e14996eebcd24decdbc",
+        "max": 0,
+        "style": "IPY_MODEL_81feb8d1d170454d85fa606b39df28c7"
+      }
+    },
+    "e0acbb00f64549708be2a0fe5b3d6b49": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5cded6611668436bb0da427e2e5f88b6": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_78bfe10afbbb4747bc828e5dc4c6b3fc",
+          "IPY_MODEL_54c68350873448a29b99f7a33404ebf3"
+        ],
+        "layout": "IPY_MODEL_e0acbb00f64549708be2a0fe5b3d6b49"
+      }
+    },
+    "611f97a633404f14bfd7370a57e52bbd": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_78bfe10afbbb4747bc828e5dc4c6b3fc",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_54c68350873448a29b99f7a33404ebf3",
+          "value"
+        ]
+      }
+    },
+    "0efaa3a5019a40d3827e192087ee03e0": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_78bfe10afbbb4747bc828e5dc4c6b3fc",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_474686e2cf814bcab6a948c95a7bd0cc",
+          "frame"
+        ]
+      }
+    },
+    "0a060ba750214fb289eaf6f32c4753aa": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_78bfe10afbbb4747bc828e5dc4c6b3fc",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_474686e2cf814bcab6a948c95a7bd0cc",
+          "max_frame"
+        ]
+      }
+    },
+    "1475707020564971a80bb7237b4e93a9": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_54c68350873448a29b99f7a33404ebf3",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_474686e2cf814bcab6a948c95a7bd0cc",
+          "max_frame"
+        ]
+      }
+    },
+    "8d85858a3f61424e88aa42014fc553fc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "6827d69eccf34068aae61aaa496b19b2": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "490bfdb9913540fabb70492e707bca4e": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_8d85858a3f61424e88aa42014fc553fc",
+        "style": "IPY_MODEL_6827d69eccf34068aae61aaa496b19b2"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "3095ca7c83f043ff9e5e3c5225ea2e29"}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "474686e2cf814bcab6a948c95a7bd0cc"}
+</script>
+
+</body>
+</html>
